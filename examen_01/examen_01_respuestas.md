@@ -1,10 +1,18 @@
 Examen 01
 
-1.-Define clase
-	Es un tipo de dato definido que agrupa atributos y métodos que operan sobre dichos 	datos
+1.-Define clase:
 
-2.-Define encapsulamiento
-	El encapsulamiento oculta los detalles de la clase y da un control para acceder a 	ellos y existen dos el privado y publico 
+	Una clase es como un molde: ahí se guardan las características (atributos) y las acciones (métodos) que tendrán los objetos que hagas con ese molde.
 
-3.-Define constructor
-	Es un método especial que se ejecuta automáticamente cundo se crea un objeto 
+
+
+2.-Define encapsulamiento:
+
+	El encapsulamiento es como ponerle candados a las cosas dentro de la clase. Tú decides qué se puede ver desde afuera (public) y qué se queda escondido (private o protected).
+
+
+
+3.-Define constructor:
+
+	El constructor es un método especial que se ejecuta solito cuando creas un objeto, y sirve para darle sus valores iniciales.
+
