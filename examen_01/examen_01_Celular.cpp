@@ -24,7 +24,7 @@ bool Celular::compararAlmacenamiento(const Celular& otro) {
     return almacenamiento > otro.almacenamiento;
 }
 
-// Ejemplo de uso en main
+// Uso en main
 int main() {
     Celular c1("Samsung", "Galaxy S21", 128, 8, 799.99);
     Celular c2("Apple", "iPhone 13", 256, 6, 999.99);
