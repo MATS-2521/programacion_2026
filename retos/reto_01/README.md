@@ -1,10 +1,11 @@
-INTEGRANTES		
+### INTEGRANTES		
 
-Marco Trejo 
-
-
-Isaías Canul
+- **Marco Antonio Trejo Sulub
 
 
-Alexander Gallegos
+- **Isaías Ezequiel Canul May
+
+
+- **Adrian Alexander Gallegos Sillas
+
 
