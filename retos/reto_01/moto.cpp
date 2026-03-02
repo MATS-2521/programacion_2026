@@ -1,4 +1,4 @@
-#include "../include/moto.h"
+#include "moto.h"
 #include <iostream>
 
 using namespace std;

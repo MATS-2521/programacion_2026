@@ -1,7 +1,7 @@
 #include <iostream>
-#include "../include/moto.h"
-#include "../include/camion.h"
-#include "../include/autobus.h"
+#include "moto.h"
+#include "camion.h"
+#include "autobus.h"
 
 using namespace std;
 

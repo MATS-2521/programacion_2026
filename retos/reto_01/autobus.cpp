@@ -1,4 +1,4 @@
-#include "../include/autobus.h"
+#include "autobus.h"
 #include <iostream>
 
 using namespace std;
