@@ -1,28 +1,19 @@
-#include "Conversacion.h"
-#include <filesystem>
-#include <fstream>
-#include <iomanip>
+#ifndef CONVERSACION_H
+#define CONVERSACION_H
 
-void Conversacion::agregarMensaje(const Mensaje& m) {
-    mensajes.push_back(m);
-}
+#include <vector>
+#include <string>
+#include "mensaje.h"
 
-std::string Conversacion::responderEco(const std::string& entrada) {
-    // Devuelve exactamente lo que recibe
-    return entrada;
-}
+class Conversacion {
+private:
+    std::vector<Mensaje> mensajes; 
 
-void Conversacion::guardarJSON(const std::string& carpetaBase) const {
-    auto now = std::time(nullptr);
-    char buf[64];
-    strftime(buf, sizeof(buf), "%Y-%m-%d_%H-%M-%S", localtime(&now));
+public:
 
-    std::filesystem::create_directory(carpetaBase);
-    std::filesystem::create_directory(carpetaBase + "/" + std::string(buf));
+    void agregarMensaje(const Mensaje& msg);
 
-    nlohmann::json j;
-    for (auto& m : mensajes) j.push_back(m.toJSON());
+    void guardarEnArchivo(const std::string& ruta) const;
+};
 
-    std::ofstream file(carpetaBase + "/" + std::string(buf) + "/chat.json");
-    file << std::setw(4) << j;
-}
+#endif

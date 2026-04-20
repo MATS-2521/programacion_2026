@@ -1,20 +1,17 @@
 #ifndef MENSAJE_H
 #define MENSAJE_H
-
 #include <string>
 #include <ctime>
-#include <nlohmann/json.hpp>
 
 class Mensaje {
-public:
-    std::string autor;
+
+    public:
     std::string contenido;
-    std::time_t timestamp;
+    std::string remitente;
+    std::time_t FechaHora;
 
-    Mensaje() = default;
-    Mensaje(const std::string& a, const std::string& c);
-
-    nlohmann::json toJSON() const;
+    Mensaje(const std::string& texto, const std::string& autor);
+    
 };
 
-#endif // MENSAJE_H
+#endif

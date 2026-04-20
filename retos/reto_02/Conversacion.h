@@ -3,18 +3,17 @@
 
 #include <vector>
 #include <string>
-#include "Mensaje.h"
+#include "mensaje.h"
 
 class Conversacion {
 private:
-    std::vector<Mensaje> mensajes;
+    std::vector<Mensaje> mensajes; 
 
 public:
-    Conversacion() = default;
 
-    void agregarMensaje(const Mensaje& m);
-    std::string responderEco(const std::string& entrada) const;
-    void guardarJSON(const std::string& carpetaBase = "conversaciones") const;
+    void agregarMensaje(const Mensaje& msg);
+
+    void guardarEnArchivo(const std::string& ruta) const;
 };
 
-#endif // CONVERSACION_H
+#endif
